@@ -1,4 +1,4 @@
-// Confirmation (you may customize this behavior)
+// Optional: You can replace this with actual tracking or redirect
 document.querySelector('form')?.addEventListener('submit', function (e) {
-  alert('Thank you. We will be in touch shortly.');
+  alert('Thank you. Our team will review your introduction request shortly.');
 });

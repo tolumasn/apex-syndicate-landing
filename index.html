@@ -2,86 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content=" width=device-width, initial-scale=1.0" />
   <title>The Apex Syndicate</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-dark text-white">
-  <!-- Hero -->
-  <section class="text-center py-5 bg-black">
-    <img src="logo.png" alt="Logo" class="mb-3" style="width: 100px; height: 100px;">
-    <h1 class="display-4 fw-bold">The Apex Syndicate</h1>
-    <p class="lead text-secondary">
-      Crypto Financial Markets Advisory for Visionaries, Founders & Investors
-    </p>
-    <a href="#access" class="btn btn-warning text-dark fw-semibold rounded-pill mt-3">
-      Request Private Access
-    </a>
+<body class="bg-black text-white">
+
+  <!-- Hero Section -->
+  <section class="text-center py-5" style="background: linear-gradient(to bottom, #000000, #111111);">
+    <img src="logo.jpg" alt="The Apex Syndicate Logo" class="mb-4" style="width: 100px; height: 100px;" />
+    <h1 class="display-3 fw-bold text-light">The Apex Syndicate</h1>
+    <p class="lead text-white mb-4">Crypto Financial Markets Advisory for Principals, Investors & Visionaries</p>
+    <a href="#access" class="btn btn-warning text-dark fw-semibold rounded-pill px-4 py-2 shadow">Request Private Access</a>
   </section>
 
-  <!-- Offerings -->
+  <!-- Value Propositions -->
   <section class="container py-5">
-    <div class="row g-4">
+    <div class="row g-5">
       <div class="col-md-4">
-        <div class="card bg-secondary text-white h-100 border-warning">
+        <div class="card bg-dark text-white border border-secondary h-100 shadow-sm">
           <div class="card-body">
-            <h5 class="card-title text-warning">Institutional-Grade Insight</h5>
-            <p class="card-text">
-              Timely research, on-chain intelligence, and macro perspective to stay ahead of market trends.
-            </p>
+            <h5 class="card-title text-warning">Strategic Intelligence</h5>
+            <p class="card-text">Market-leading research, early insights, and digital asset intelligence tailored for serious allocators.</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card bg-secondary text-white h-100 border-warning">
+        <div class="card bg-dark text-white border border-secondary h-100 shadow-sm">
           <div class="card-body">
-            <h5 class="card-title text-warning">Actionable Strategy</h5>
-            <p class="card-text">
-              Customized strategies for capital growth, protection, and long-term positioning across digital assets.
-            </p>
+            <h5 class="card-title text-warning">Capital Alignment</h5>
+            <p class="card-text">Custom strategies for growth, risk management, and legacy crypto wealth built for multi-year horizons.</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card bg-secondary text-white h-100 border-warning">
+        <div class="card bg-dark text-white border border-secondary h-100 shadow-sm">
           <div class="card-body">
-            <h5 class="card-title text-warning">Private Network</h5>
-            <p class="card-text">
-              An invite-only network of investors, builders, and funds sharing real opportunities and market edge.
-            </p>
+            <h5 class="card-title text-warning">A Global Syndicate</h5>
+            <p class="card-text">Private access to a closed network of capital allocators, funds, and digital-first wealth architects.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Request Access -->
-  <section class="bg-black py-5 text-center" id="access">
-    <div class="container">
-      <h2 class="mb-3">Join the Syndicate</h2>
-      <p class="text-secondary mb-4">
-        We work with a small number of clients. Request an introduction and we’ll reach out personally.
-      </p>
-      <form action="https://formspree.io/f/maylgygl" method="POST" class="row justify-content-center g-2">
+  <!-- Form -->
+  <section class="bg-black py-5" id="access">
+    <div class="container text-center">
+      <h2 class="display-6 fw-semibold text-light mb-3">Request a Private Introduction</h2>
+      <p class="text-secondary mb-5">The Syndicate operates on discretion and trust. Introduce yourself to begin the process.</p>
+      <form action="https://formspree.io/f/mgvapggz" method="POST" class="row justify-content-center g-3 text-start">
         <div class="col-md-4">
-          <input type="text" name="name" required class="form-control bg-dark text-white border-secondary" placeholder="Full Name">
+          <label for="name" class="form-label text-white">Full Name</label>
+          <input type="text" id="name" name="name" required class="form-control bg-dark text-white border-secondary" placeholder="John M. Doe" />
         </div>
         <div class="col-md-4">
-          <input type="email" name="email" required class="form-control bg-dark text-white border-secondary" placeholder="Email Address">
+          <label for="email" class="form-label text-white">Email Address</label>
+          <input type="email" id="email" name="email" required class="form-control bg-dark text-white border-secondary" placeholder="you@example.com" />
         </div>
-        <div class="col-md-auto">
-          <button type="submit" class="btn btn-warning text-dark fw-semibold rounded-pill">
-            Request an Introduction
-          </button>
+        <div class="col-md-8">
+          <label for="organization" class="form-label text-white">Organization / Fund (optional)</label>
+          <input type="text" id="organization" name="organization" class="form-control bg-dark text-white border-secondary" placeholder="Family Office, DAO, Fund..." />
+        </div>
+        <div class="col-md-8">
+          <label for="message" class="form-label text-white">Message or Interest</label>
+          <textarea id="message" name="message" rows="4" class="form-control bg-dark text-white border-secondary" placeholder="Your goals, interests, or any context you’d like to share."></textarea>
+        </div>
+        <div class="col-md-8 text-center">
+          <button type="submit" class="btn btn-warning text-dark fw-semibold px-5 rounded-pill mt-3">Submit Request</button>
         </div>
       </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center text-secondary py-4 bg-dark">
-    &copy; 2025 The Apex Syndicate. Private Crypto Financial Advisory.
+  <footer class="text-center text-secondary py-4 bg-dark border-top border-secondary">
+    &copy; 2025 The Apex Syndicate. Discreet. Strategic. Committed to Legacy.
   </footer>
 
   <script src="script.js"></script>
